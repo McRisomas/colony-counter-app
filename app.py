@@ -38,8 +38,9 @@ uploaded_files = st.file_uploader("Choose a petri dish image ...", type=["jpg", 
 
 if uploaded_files is not None:
     st.info(f"Total {len(uploaded_files)} gambar siap dianalisis.")
+    
     # Tampilkan preview gambar yang diuplad terlebih dahulu
-    st.image(uploaded_file, caption="Uploaded Image", width=400)
+    st.image(uploaded_files, caption="Uploaded Image", width=400)
 
     # Konversi file unggahan menjadi format numpy/array
     image = Image.open(uploaded_file)
