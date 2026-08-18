@@ -36,11 +36,12 @@ conf_thresh = st.sidebar.slider(
 # 4. Area Upload Gambar
 uploaded_files = st.file_uploader("Choose a petri dish image ...", type=["jpg", "jpeg", "png"], accept_multiple_files=True)
 
-if uploaded_files is not None:
+if uploaded_files:
     st.info(f"Total {len(uploaded_files)} gambar siap dianalisis.")
     
     # Tampilkan preview gambar yang diuplad terlebih dahulu
-    st.image(uploaded_files, caption="Uploaded Image", width=400)
+    for file in uploaded_files:
+        st.image(uploaded_files, caption=f"Uploaded: {file.name}", width=400)
 
     # Konversi file unggahan menjadi format numpy/array
     image = Image.open(uploaded_files)
