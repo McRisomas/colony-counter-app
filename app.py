@@ -43,7 +43,7 @@ if uploaded_files is not None:
     st.image(uploaded_files, caption="Uploaded Image", width=400)
 
     # Konversi file unggahan menjadi format numpy/array
-    image = Image.open(uploaded_file)
+    image = Image.open(uploaded_files)
     img_array = np.array(image)
     img_bgr = cv2.cvtColor(img_array, cv2.COLOR_RGB2BGR)
     
