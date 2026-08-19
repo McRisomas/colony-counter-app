@@ -48,7 +48,7 @@ if uploaded_files:
         with st.spinner("Counting colonies..."):
             for uploaded_file in uploaded_files:
                 # Konversi file unggahan menjadi format numpy/array
-                image = Image.open(uploaded_file)
+                image = Image.open(uploaded_file).convert("RGB") # .convert("RGB") berfungsi untuk operasi file PNG yang memiliki 4 channel sehingga di konversi ke RGB (3 channel dulu)
                 img_array = np.array(image)
                 img_bgr = cv2.cvtColor(img_array, cv2.COLOR_RGB2BGR)
 
