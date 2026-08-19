@@ -37,7 +37,7 @@ conf_thresh = st.sidebar.slider(
 uploaded_files = st.file_uploader("Choose a petri dish image ...", type=["jpg", "jpeg", "png"], accept_multiple_files=True)
 
 if uploaded_files:
-    st.info(f"Total {len(uploaded_files)} gambar siap dianalisis.")
+    st.info(f"Total {len(uploaded_files)} image is ready for analysis..")
 
     for uploaded_file in uploaded_files:
         # Tampilkan preview gambar yang diupload terlebih dahulu
