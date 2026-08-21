@@ -1,6 +1,6 @@
 # Automatic Colony Counter Web Application
 
-**Colony Counter Web App** [Try the Colony Counter Web App Using Streamlit](https://colony-counter-app-eett3oohw3k3f23ajqkw8m.streamlit.app/~/+/#automatic-bacterial-colony-counter)
+**Colony Counter Web App:** [Try the Colony Counter Web App Using Streamlit](https://colony-counter-app-eett3oohw3k3f23ajqkw8m.streamlit.app/~/+/#automatic-bacterial-colony-counter)
 
 An interactive computer vision web application that automatically detect and count bacterial or fungi colony in an petri dishes image by using YOLOv11 model
 
